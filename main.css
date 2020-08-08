@@ -1,0 +1,71 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.column {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column:hover, .column:hover a {
+  color: white;
+  cursor: pointer;
+}
+
+.first:hover {
+  background: rgb(0,114,247);
+  background: linear-gradient(180deg, rgba(0,114,247,1) 0%, rgba(7,95,185,1) 50%);
+}
+
+.second:hover {
+  background: rgb(240,42,2);
+  background: linear-gradient(180deg, rgba(240,42,2,1) 0%, rgba(237,102,6,1) 50%);
+}
+
+.soon {
+  background-color: #F2F2F2;
+}
+
+.soon:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.yearn-icon, .curve-icon {
+  margin-bottom: 30px;
+}
+
+.yearn-icon {
+  width: 100px;
+  height: 100px;
+  background-image:url('./yfi-blue.png');
+  background-size: cover;
+}
+
+.first:hover .yearn-icon {
+  background-image:url('./yfi-white.png');
+}
+
+.curve-icon {
+  width: 100px;
+  height: 100px;
+  background-image:url('./curve.png');
+  background-size: cover;
+}
+
+.second:hover .curve-icon {
+  background-image:url('./curve-white.png');
+}
